@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'type2fuzzy',
   packages = ['type2fuzzy'],
-  version = '0.10',
+  version = '0.12',
   license='GNU',
   description = 'Library for type-2 fuzzy logic research',
   author = 'Carmel Gafa',
@@ -12,7 +12,6 @@ setup(
   install_requires=[
           'numpy',
           'matplotlib',
-          'itertools',
       ],
   classifiers=[  # Optional
     # How mature is this project? Common values are
@@ -22,11 +21,11 @@ setup(
     'Development Status :: 3 - Alpha',
 
     # Indicate who your project is intended for
-    'Intended Audience :: Researchers',
+    'Intended Audience :: Developers',
     'Topic :: Software Development :: Build Tools',
 
     # Pick your license as you wish
-    'License :: OSI Approved :: GNU License',
+    'License :: OSI Approved :: MIT License',
 
     # Specify the Python versions you support here. In particular, ensure
     # that you indicate whether you support Python 2, Python 3 or both.
