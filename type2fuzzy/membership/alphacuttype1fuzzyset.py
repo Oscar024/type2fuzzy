@@ -67,7 +67,7 @@ class AlphaCutType1FuzzySet:
 		'''
 		return self._set_definition.keys()
 
-	def __repr__(self):
+	def __str__(self):
 		'''
 		returns a string representation of the alpha-cut type-1 fuzzy set in the form:
 		
@@ -81,3 +81,6 @@ class AlphaCutType1FuzzySet:
 			representation.append(f'{alpha_cut} : {self._set_definition[alpha_cut]}')
 		
 		return '\n'.join(representation)
+
+	def __repr__(self):
+		return f'{self.__class__.__name__}(str(self))'

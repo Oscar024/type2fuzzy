@@ -64,7 +64,7 @@ class ZSliceType2FuzzySet:
 	def zslices(self):
 		return list(self._z_slice_set_elements.keys())
 
-	def __repr__(self):
+	def __str__(self):
 		'''
 
 		'''
@@ -75,3 +75,5 @@ class ZSliceType2FuzzySet:
 
 		return '\n'.join(representation)
 	
+	def __repr__(self):
+		return f'{self.__class__.__name__}(str(self))'
