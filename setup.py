@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'type2fuzzy',
   packages = ['type2fuzzy'],
-  version = '0.12',
+  version = '0.13',
   license='GNU',
   description = 'Library for type-2 fuzzy logic research',
   author = 'Carmel Gafa',
