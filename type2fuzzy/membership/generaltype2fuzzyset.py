@@ -624,8 +624,7 @@ class GeneralType2FuzzySet:
 		slice_rep = ' + '.join(m)
 		return slice_rep
 
-
-	def __repr__(self):
+	def __str__(self):
 		'''
 		Returns a formal representation of the general type-2 fuzzy set in the form:
 		'(a1/u1 + a2/u2 + ... + an/un)/x1 + ... + (b1/u1 + b2/u2 + ... + bn/un)/xn'
@@ -665,6 +664,10 @@ class GeneralType2FuzzySet:
 		set_representation = ' + '.join(m2)
 
 		return set_representation
+
+	def __repr__(self):
+		return f'{self.__class__.__name__}(str(self))'
+
 
 	def join(self, gt2fs):
 		
