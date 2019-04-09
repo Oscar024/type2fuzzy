@@ -151,7 +151,7 @@ class IntervalType2FuzzySet:
 		'''
 		return self.primary_domain()[int(len(self.primary_domain())/2)]
 
-	def __repr__(self):
+	def __str__(self):
 		'''
 		Creates a string representation of the interval type 2 fuzzy set in the form:
 		(lower_1, upper_1)/domain_1 + ... + (lower_n, upper_n)/domain_n
@@ -164,6 +164,9 @@ class IntervalType2FuzzySet:
 		set_representation = '+'.join(set_representation_list)
 
 		return set_representation
+
+	def __repr__(self):
+		return f'{self.__class__.__name__}(str(self))'
 
 	def add_element(self, primary_domain_val, crisp_set):
 		'''
