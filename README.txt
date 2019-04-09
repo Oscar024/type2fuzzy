@@ -13,4 +13,9 @@ A type-2 fuzzy logic library providing:
 8. Tools to plot general, interval and z-sliced type-2 fuzzy sets and type-1 fuzzy sets.
 and more
 
-All type2fuzzy wheels distributed on PyPI are BSD licensed. 
+All type2fuzzy wheels distributed on PyPI are BSD licensed.
+
+Examples of how this library was used to work some famous type-2 fuzzy logic papers can be found here:
+
+https://github.com/t2fuzz/type2fuzzy_examples
+
