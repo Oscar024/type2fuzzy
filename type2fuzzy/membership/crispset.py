@@ -94,7 +94,7 @@ class CrispSet:
 		self._left_val = min(self._left_val, crisp_set.left)
 		self._right_val = max(self._right_val, crisp_set.right)
 
-	def __repr__(self):
+	def __str__(self):
 
 		dec_places_formatter = '''%0.{}f'''.format(self._precision)
 		representation = ''
@@ -104,3 +104,6 @@ class CrispSet:
 			representation = f'[{ dec_places_formatter % self._left_val}, {dec_places_formatter % self._right_val}]'
 
 		return representation
+
+	def __repr__(self):
+		return f'{self.__class__.__name__}(str(self))'
