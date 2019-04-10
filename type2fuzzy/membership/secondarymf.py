@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 from type2fuzzy.membership.type1fuzzyset import Type1FuzzySet
 
 class SecondaryMembershipFunction(Type1FuzzySet):

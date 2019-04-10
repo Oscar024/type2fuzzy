@@ -645,8 +645,6 @@ class GeneralType2FuzzySet:
 		represented_slices = []
 		dec_places_formatter = '''%0.{}f'''.format(self._precision)
 
-
-
 		for primary_domain_val in self.primary_domain():
 			sec_domains = list(self.vertical_slice(primary_domain_val).domain_elements())
 			doms = list(self.vertical_slices[primary_domain_val].dom_elements())
@@ -666,7 +664,7 @@ class GeneralType2FuzzySet:
 		return set_representation
 
 	def __repr__(self):
-		return f'{self.__class__.__name__}(str(self))'
+		return f'{self.__class__.__name__}({str(self)})'
 
 
 	def join(self, gt2fs):

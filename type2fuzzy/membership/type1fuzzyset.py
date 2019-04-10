@@ -380,7 +380,7 @@ class Type1FuzzySet:
 		return set_representation
 
 	def __repr__(self):
-		return f'{self.__class__.__name__}(str(self))'
+		return f'{self.__class__.__name__}({str(self)})'
 
 	def extend(self, func):
 
