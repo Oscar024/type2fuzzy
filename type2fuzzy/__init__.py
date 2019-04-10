@@ -4,7 +4,6 @@ Recommended Use
 >>> import type2fuzzy as t2f
 """
 __all__ = []
-__version__ = '0.1.1'
 
 import type2fuzzy.membership as _membership
 import type2fuzzy.display as _display
@@ -29,5 +28,5 @@ __author__  = 'Carmel Gafa'
 __email__ = 't2fuzz@gmail.com'
 __copyright__ = '"Copyright 2007, Carmel Gafa"'
 __status__  = "alpha"
-__version__ = "0.1.13"
+__version__ = "0.1.14"
 __date__    = "01 April 2019"

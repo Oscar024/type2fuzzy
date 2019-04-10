@@ -1,6 +1,7 @@
 """
 type2.membership : type-2 fuzzy membership 
 """
+
 from type2fuzzy.membership.secondarymf import SecondaryMembershipFunction
 from type2fuzzy.membership.secondarymf import Type1FuzzySet
 from type2fuzzy.membership.generaltype2fuzzyset import GeneralType2FuzzySet
