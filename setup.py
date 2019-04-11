@@ -1,4 +1,10 @@
 from distutils.core import setup
+from os import path
+
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+	long_description = f.read()
+
 setup(
 	name = 'type2fuzzy',
 	packages = [
@@ -9,9 +15,11 @@ setup(
 				'type2fuzzy/type1_defuzzification',
 				'type2fuzzy/type_reduction',
 			],
-	version = '0.1.14',
+	version = '0.1.15',
 	license='GNU',
 	description = 'Library for type-2 fuzzy logic research',
+	long_description=long_description,
+	long_description_content_type='text/markdown',
 	author = 'Carmel Gafa',
 	author_email = 't2fuzzlibrary@gmail.com',
 	url = 'https://github.com/t2fuzz/type2fuzzy',
