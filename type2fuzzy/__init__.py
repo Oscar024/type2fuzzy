@@ -28,5 +28,5 @@ __author__  = 'Carmel Gafa'
 __email__ = 't2fuzz@gmail.com'
 __copyright__ = '"Copyright 2007, Carmel Gafa"'
 __status__  = "alpha"
-__version__ = "0.1.14"
+__version__ = "0.1"
 __date__    = "01 April 2019"
