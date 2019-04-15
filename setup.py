@@ -15,7 +15,7 @@ setup(
 				'type2fuzzy/type1_defuzzification',
 				'type2fuzzy/type_reduction',
 			],
-	version = '0.1.15',
+	version = '0.1.16',
 	license='GNU',
 	description = 'Library for type-2 fuzzy logic research',
 	long_description=long_description,
