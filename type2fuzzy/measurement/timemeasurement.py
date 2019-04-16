@@ -65,13 +65,13 @@ class TimeMeasurement(object):
 			'''
 			Execution of the function
 			'''
-			filename = args[0]
+			#filename = args[0]
 			dirname = self.report_folder
 
 			#store the duration taken for each function to calculate average
 			durations = []
 			# create a logger for each iteration fo the function
-			item_logger = self.setup_logger('item_logger', f'{dirname}\\{filename}.item.log')
+			item_logger = self.setup_logger('item_logger', f'{dirname}\\item.log')
 
 			# loop iteration times
 			for i in range(self.iterations):
@@ -83,11 +83,11 @@ class TimeMeasurement(object):
 				duration = end - start
 				durations.append(duration)
 				#add item to list and echo
-				item_logger.debug((f'\t{i},\t{filename}\t{returns},\t{duration}').replace(']', '').replace('[', ''))
+				item_logger.debug((f'\t{i},\t{args}\t{returns},\t{duration}').replace(']', '').replace('[', ''))
 
 			#create a logger to add average duration and log
-			summary_logger = self.setup_logger('summary_logger', f'{dirname}\\{filename}.summary.log')
-			summary_logger.debug((f'\t{filename},\t{sum(durations)/len(durations)}').replace(']', '').replace('[', ''))
+			summary_logger = self.setup_logger('summary_logger', f'{dirname}\\.summary.log')
+			summary_logger.debug((f'\t{args},\t{sum(durations)/len(durations)}').replace(']', '').replace('[', ''))
 
 			#get rid of loggers
 			self.dispose_logger(item_logger)
