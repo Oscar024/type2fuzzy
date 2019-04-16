@@ -10,7 +10,7 @@ setup(
 	name = 'type2fuzzy',
 	version = '0.1.21',
 	description = DESCRIPTION,
-	long_description=open('README.md').read(),	
+	long_description=open('README.txt').read(),	
 	long_description_content_type = 'text/markdown',
 	classifiers=
 	[
