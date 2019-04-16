@@ -61,11 +61,10 @@ class TimeMeasurement(object):
 		----------------------------------
 		func -- function to be executed
 		'''
-		def wrapped_func(*args):
+		def wrapped_func(param, *args):
 			'''
 			Execution of the function
 			'''
-			#filename = args[0]
 			dirname = self.report_folder
 
 			#store the duration taken for each function to calculate average
@@ -77,7 +76,7 @@ class TimeMeasurement(object):
 			for i in range(self.iterations):
 				#start timer, execute function, stop timer
 				start = time.perf_counter()
-				returns = func(*args)
+				returns = func(param, *args)
 				end = time.perf_counter()
 				#calculate the duration and add it to the durations list
 				duration = end - start
