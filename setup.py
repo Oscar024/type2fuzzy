@@ -8,7 +8,7 @@ setup(
 	author = 'Carmel Gafa',
 	author_email = 't2fuzzlibrary@gmail.com',
 	name = 'type2fuzzy',
-	version = '0.1.20',
+	version = '0.1.21',
 	description = DESCRIPTION,
 	long_description=open('README.md').read(),	
 	long_description_content_type = 'text/markdown',
